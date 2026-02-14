@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Blaze Official - Home</title>
+    <style>
+        /* ১. প্রিমিয়াম ডার্ক গেমিং ব্যাকগ্রাউন্ড */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a; /* পিওর ব্ল্যাক গেমিং থিম */
+            background-image: 
+                radial-gradient(circle at 50% -20%, #ff450033 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, #ff000022 0%, transparent 40%);
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ২. নিয়ন অরেঞ্জ টাইটেল এনিমেশন */
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .blaze-title {
+            font-size: 65px;
+            font-weight: 900;
+            color: #ff4500;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            margin: 0;
+            text-shadow: 0 0 20px #ff4500, 0 0 40px #ff0000;
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            from { transform: scale(1); text-shadow: 0 0 20px #ff4500; }
+            to { transform: scale(1.05); text-shadow: 0 0 40px #ff8c00, 0 0 60px #ff4500; }
+        }
+
+        .subtitle {
+            color: #ff8c00;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        /* ৩. ভাসমান ইমেজ বক্স (Floating Animation) */
+        .image-box {
+            margin: 50px 0;
+            width: 320px;
+            height: 320px;
+            border: 4px solid #ff4500;
+            border-radius: 20px;
+            box-shadow: 0 0 30px #ff450088;
+            overflow: hidden;
+            animation: floatAnim 4s ease-in-out infinite;
+            background: #111;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes floatAnim {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        /* ৪. স্টাইলিশ নেক্সট বাটন (কালার চেঞ্জিং) */
+        .next-btn {
+            padding: 18px 70px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff4500, #ff1a1a);
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .next-btn:hover {
+            background: linear-gradient(45deg, #ff8c00, #ff4500);
+            box-shadow: 0 0 30px #ff4500;
+            letter-spacing: 5px;
+            transform: translateY(-5px);
+        }
+
+        /* ৫. কন্টাক্ট সেকশন */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 69, 0, 0.3);
+            padding: 30px;
+            border-radius: 20px;
+            width: 85%;
+            max-width: 500px;
+            margin: 60px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-card h2 {
+            color: #ff4500;
+            margin-top: 0;
+            border-bottom: 2px solid #ff4500;
+            display: inline-block;
+        }
+
+        .info-row {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .info-row b { color: #ff8c00; }
+
+        footer {
+            margin-bottom: 30px;
+            color: #444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="blaze-title">TEAM BLAZE</h1>
+        <div class="subtitle">BANGLADESH OFFICIAL GAMING SQUAD</div>
+    </header>
+
+    <div class="image-box">
+        <img src="YOUR_IMAGE_FILE.jpg" alt="Team Blaze Members">
+    </div>
+
+    <a href="page2.html" class="next-btn">NEXT PAGE</a>
+
+    <div class="contact-card">
+        <h2>Contract with BLAZE</h2>
+        <div class="info-row">📧 <b>Email:</b> fahimhasanfaeid@gmail.com</div>
+        <div class="info-row">💬 <b>Message:</b> Join the heat, play with Blaze!</div>
+    </div>
+
+    <footer>
+        &copy; 2026 Fahim Hasan Faeid | Designed for Champions
+    </footer>
+
+</body>
+</html>
